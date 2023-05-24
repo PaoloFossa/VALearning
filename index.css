@@ -44,6 +44,7 @@ main{
 #sectA{
     background-color: var(--azzurro2);
     width: 20%;
+    border-radius: 10px;
 }
 #sectB{
     width: 80%;
@@ -61,3 +62,10 @@ main{
     display: block !important;
 }
 
+#accordionFlushExample .accordion-item{
+    background-color: var(--azzurro2);
+}
+
+#accordionFlushExample .accordion-header{
+    background-color: var(--azzurro2);
+}
