@@ -1,13 +1,13 @@
 /*Definizione delle variabili css relative ai colori*/
-:root{
+:root {
     --bluScuro: #000080;
     --azzurro1: #4c80cb;
-    --azzurro2:  #506aff;
+    --azzurro2: #506aff;
     --rosso: #cf2d47;
 }
 
 
-body{
+body {
     /*
         Richiamare una variabile
         background-color: var(--rosso);
@@ -20,11 +20,11 @@ body{
     margin: 0px;
 }
 
-header{
+header {
     width: 100%;
 }
 
-.navbar-brand{
+.navbar-brand {
     width: 100px;
     height: 40px;
     background-image: url("img/logo.png");
@@ -33,39 +33,48 @@ header{
     background-repeat: no-repeat;
 }
 
-main{
+main {
     height: 80vh;
     width: 100%;
-    overflow-y:auto;
+    overflow-y: auto;
     display: flex;
     flex-direction: row;
 }
 
-#sectA{
+#sectA {
     background-color: var(--azzurro2);
     width: 20%;
     border-radius: 10px;
 }
-#sectB{
+
+#sectB {
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.toast{
+.toast {
     margin-top: 50px;
     box-shadow: none;
+}
+
+.toast-body {
+    cursor: pointer;
 }
 
 .toast:not(.show) {
     display: block !important;
 }
 
-#accordionFlushExample .accordion-item{
+#accordionFlushExample .accordion-item {
     background-color: var(--azzurro2);
 }
 
-#accordionFlushExample .accordion-header{
+#accordionFlushExample .accordion-header {
     background-color: var(--azzurro2);
+}
+
+.btnArrow {
+    padding-bottom: 10px !important;
 }
