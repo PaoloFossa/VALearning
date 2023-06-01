@@ -21,14 +21,30 @@ var carosello = [
     }
 ];
 
+function chiudo(){
+  let div = document.getElementById("ciao");
+
+  div.style.display = "none";
+}
+
 
 let toasts = document.getElementsByClassName("toast-body");
 console.log(toasts);
 
 for (let i = 0; i < toasts.length; i++) {
-  toasts[i].addEventListener("click", function ok() {
-    alert("ciao");
+  toasts[i].addEventListener("click", function (){
+
+    let div = document.getElementById("ciao");
+
+    div.style.display = "block";
   });
+}
+
+function ok(){
+  let div = document.getElementById("ciao");
+
+  div.style.display = "block";
+
 }
 
 var pag = 1;
@@ -87,7 +103,7 @@ function creaToast1(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -100,7 +116,7 @@ function creaToast1(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -113,7 +129,7 @@ function creaToast1(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -143,7 +159,7 @@ function creaToast1(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -156,7 +172,7 @@ function creaToast1(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -169,13 +185,20 @@ function creaToast1(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div id="ciao" style="display: none;" class="container">
+        <button class="button col" onclick="chiudo()">
+          <span class="material-symbols-outlined">
+          close
+          </span>
+        </button>
       </div>
 `;
 }
@@ -190,7 +213,7 @@ function creaToast2(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -203,7 +226,7 @@ function creaToast2(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -216,7 +239,7 @@ function creaToast2(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -256,7 +279,7 @@ function creaToast2(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -269,7 +292,7 @@ function creaToast2(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -282,7 +305,7 @@ function creaToast2(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -290,8 +313,16 @@ function creaToast2(){
           </div>
         </div>
       </div>
+      <div id="ciao" style="display: none;" class="container">
+        <button class="button col" onclick="chiudo()">
+          <span class="material-symbols-outlined">
+          close
+          </span>
+        </button>
+      </div>
 `;
 }
+
 function creaToast3(){
     return `
       <div class="container">
@@ -303,7 +334,7 @@ function creaToast3(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -316,7 +347,7 @@ function creaToast3(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -329,7 +360,7 @@ function creaToast3(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -358,7 +389,7 @@ function creaToast3(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -371,7 +402,7 @@ function creaToast3(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
@@ -384,13 +415,20 @@ function creaToast3(){
                 <strong class="me-auto">Gianmarco pippo</strong>
                 <small>11 mins ago</small>
               </div>
-              <div class="toast-body">
+              <div class="toast-body" onclick = "ok()">
                 <h5></h5>
                 <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div id="ciao" style="display: none;" class="container">
+        <button class="button col" onclick="chiudo()">
+          <span class="material-symbols-outlined">
+          close
+          </span>
+        </button>
       </div>
 `;
 }
