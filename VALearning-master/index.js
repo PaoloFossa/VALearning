@@ -25,6 +25,10 @@ function chiudo(){
   let div = document.getElementById("ciao");
 
   div.style.display = "none";
+
+  let section = document.querySelector("body");
+
+  section.style.background = "rgba(0,0,0,0)";
 }
 
 
@@ -194,11 +198,74 @@ function creaToast1(){
         </div>
       </div>
       <div id="ciao" style="display: none;" class="container">
-        <button class="button col" onclick="chiudo()">
+        <button class="button" onclick="chiudo()">
           <span class="material-symbols-outlined">
           close
           </span>
         </button>
+        <h2>Domanda</h2>
+        <div class="toast" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <h2 class="mb-2">Risposte</h2>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="input-group mb-3" id="mess">
+          <input type="text" class="form-control" placeholder="Risposta" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-primary" type="button" id="button-addon2"><span class="material-symbols-outlined">
+            send
+            </span></button>
+        </div>
       </div>
 `;
 }
@@ -314,11 +381,74 @@ function creaToast2(){
         </div>
       </div>
       <div id="ciao" style="display: none;" class="container">
-        <button class="button col" onclick="chiudo()">
+        <button class="button" onclick="chiudo()">
           <span class="material-symbols-outlined">
           close
           </span>
         </button>
+        <h2>Domanda</h2>
+        <div class="toast" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <h2 class="mb-2">Risposte</h2>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="input-group mb-3" id="mess">
+          <input type="text" class="form-control" placeholder="Risposta" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-primary" type="button" id="button-addon2"><span class="material-symbols-outlined">
+            send
+            </span></button>
+        </div>
       </div>
 `;
 }
@@ -424,11 +554,74 @@ function creaToast3(){
         </div>
       </div>
       <div id="ciao" style="display: none;" class="container">
-        <button class="button col" onclick="chiudo()">
+        <button class="button" onclick="chiudo()">
           <span class="material-symbols-outlined">
           close
           </span>
         </button>
+        <h2>Domanda</h2>
+        <div class="toast" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <h2 class="mb-2">Risposte</h2>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+            <strong class="me-auto">Gianmarco pippo</strong>
+            <small>11 mins ago</small>
+          </div>
+          <div class="toast-body">
+            <h5></h5>
+            <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+          </div>
+        </div>
+        <div class="input-group mb-3" id="mess">
+          <input type="text" class="form-control" placeholder="Risposta" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-primary" type="button" id="button-addon2"><span class="material-symbols-outlined">
+            send
+            </span></button>
+        </div>
       </div>
 `;
 }
