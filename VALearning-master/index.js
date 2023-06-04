@@ -55,6 +55,14 @@ function ok(){
   div.style.display = "block";
 
 }
+
+function risposta(){
+  let div = document.getElementById("ciao");
+
+  div.innerHTML += creaRisp();
+
+
+}
 function dislikes(){
   if(dislikefatto != 1 && likefatto != 1){
     let spandislike = document.getElementById("dislike");
@@ -125,7 +133,31 @@ function campagsx(){
 
 }
 
+function creaRisp(){
+  let txt = document.getElementById("txtRisp");
 
+  return `
+  <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="img/profilo.png" class="rounded me-2" alt="ce sta nu problema">
+        <strong class="me-auto">Gianmarco pippo</strong>
+        <small>11 mins ago</small>
+      </div>
+    <div class="toast-body">
+      <h5></h5>
+      <p>${txt.value}</p>
+      <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+        thumb_up
+      </span></button>
+      <span id="like"></span>
+      <button onclick="dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+        thumb_down
+      </span></button>
+      <span id="dislike"></span>
+    </div>
+  </div>
+`
+}
 function creaToast1(){
     return `
       <div class="container">
