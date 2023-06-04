@@ -131,3 +131,23 @@ main {
 #ciao .toast {
     width: 70%;
 }
+
+#mess {
+    position: fixed;
+    bottom: 7%;
+    width: 65%;
+}
+
+#ciao .toast {
+    width: 70%;
+}
+
+ul strong {
+    font-size: x-large;
+}
+
+li {
+    font-size: large;
+    color: white;
+
+}
