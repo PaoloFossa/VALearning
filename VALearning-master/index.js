@@ -21,6 +21,11 @@ var carosello = [
     }
 ];
 
+var like = 0;
+var dislike = 0;
+var likefatto = 0;
+var dislikefatto = 0;
+
 function chiudo(){
   let div = document.getElementById("ciao");
 
@@ -49,6 +54,31 @@ function ok(){
 
   div.style.display = "block";
 
+}
+function dislikes(){
+  if(dislikefatto != 1 && likefatto != 1){
+    let spandislike = document.getElementById("dislike");
+    dislike++;
+  
+    dislikefatto = 1;
+  
+    spandislike.innerText = dislike;
+  }else{
+    alert("hai già dato un like o un dislike");
+  }
+}
+
+function likes(){
+  if(dislikefatto != 1 && likefatto != 1){
+    let spanlike = document.getElementById("like");
+    like++;
+  
+    likefatto = 1;
+  
+    spanlike.innerText = like;
+  }else{
+    alert("hai già dato un like o un dislike");
+  }
 }
 
 var pag = 1;
@@ -225,6 +255,12 @@ function creaToast1(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -236,6 +272,12 @@ function creaToast1(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -247,6 +289,12 @@ function creaToast1(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -258,6 +306,12 @@ function creaToast1(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="input-group mb-3" id="mess">
@@ -408,6 +462,12 @@ function creaToast2(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -419,6 +479,12 @@ function creaToast2(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -430,6 +496,12 @@ function creaToast2(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -441,6 +513,12 @@ function creaToast2(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button  onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="input-group mb-3" id="mess">
@@ -581,6 +659,12 @@ function creaToast3(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -592,6 +676,12 @@ function creaToast3(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -603,6 +693,12 @@ function creaToast3(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="toast mb-5" aria-live="assertive" aria-atomic="true">
@@ -614,6 +710,12 @@ function creaToast3(){
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick = "likes()" type="button" class="btn btn-outline-success"><span class="material-symbols-outlined">
+            thumb_up
+            </span></button>
+          <button onclick = "dislikes()" type="button" class="btn btn-outline-danger"><span class="material-symbols-outlined">
+            thumb_down
+            </span></button>
           </div>
         </div>
         <div class="input-group mb-3" id="mess">
