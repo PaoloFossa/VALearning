@@ -45,7 +45,7 @@ main {
     background-color: var(--azzurro2);
     width: 20%;
     border-radius: 10px;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 
 #sectB {
@@ -80,17 +80,17 @@ main {
     padding-bottom: 10px !important;
 }
 
-#sectA  ul{
+#sectA ul {
     margin-left: 15px;
 }
 
-#frecce{
+#frecce {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#ciao{
+#ciao {
     width: 70vw;
     height: 80vh;
     z-index: 5;
@@ -100,6 +100,7 @@ main {
     background-color: white;
     border: 1px black solid;
     border-radius: 2%;
+    overflow-y: scroll;
 }
 
 .button {
@@ -107,14 +108,26 @@ main {
     position: absolute;
     right: 0%;
 }
-  
+
 .button:hover {
-    background-color: red; /* Green */
+    background-color: red;
+    /* Green */
     color: white;
 }
+
 .button {
     background-color: white;
     color: red;
     border: 2px solid red;
     border-radius: 0px 16px 0px 10px;
+}
+
+#mess {
+    position: fixed;
+    bottom: 7%;
+    width: 68%;
+}
+
+#ciao .toast {
+    width: 70%;
 }
