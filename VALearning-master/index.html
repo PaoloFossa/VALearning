@@ -128,61 +128,58 @@
                 </div>
               </div>
             -->
-      <div class="overflow-scroll">
-        <ul class="nav flex-column" data-bs-theme="dark">
-          <strong>I ANNO</strong>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Past Simple</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Past Simple</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Past Simple</a>
-          </li>
-          <strong>II ANNO</strong>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Present Perfect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Present Perfect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Present Perfect</a>
-          </li>
-          <strong>III ANNO</strong>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Present Continuos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Present Continuos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Present Continuos</a>
-          </li>
-          <strong>IV ANNO</strong>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Past Perfect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Past Perfect</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Past Perfect</a>
-          </li>
-          <strong>V ANNO</strong>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Wish</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Wish</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Wish</a>
-          </li>
-        </ul>
-      </div>
-
+      <ul class="nav flex-column" data-bs-theme="dark">
+        <strong>I ANNO</strong>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Past Simple</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Past Simple</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Past Simple</a>
+        </li>
+        <strong>II ANNO</strong>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Present Perfect</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Present Perfect</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Present Perfect</a>
+        </li>
+        <strong>III ANNO</strong>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Present Continuos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Present Continuos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Present Continuos</a>
+        </li>
+        <strong>IV ANNO</strong>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Past Perfect</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Past Perfect</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Past Perfect</a>
+        </li>
+        <strong>V ANNO</strong>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Wish</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Wish</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Wish</a>
+        </li>
+      </ul>
     </section>
 
     <!-- 2^ section -->
@@ -366,7 +363,34 @@
             </div>
           </div>
         </div>
+
+
+        <div class="col-1 ms-auto pt-4" id="divBtnAdd">
+          <button type="button" class="btn btn-outline-primary" id="btnAdd" onclick="aggiungiDomanda()">
+            <span class="material-symbols-outlined">
+              add
+            </span>
+          </button>
+        </div>
       </div>
+
+      <div id="aggDomanda" style="display: none;" class="container">
+        <button class="button" onclick="chiudo()">
+          <span class="material-symbols-outlined">
+            close
+          </span>
+        </button>
+        <div class="input-group mb-3" id="scriviDom">
+          <input id="txtDomanda" type="text" class="form-control" placeholder="Scrivi una domanda..."
+            aria-label="Recipient's username" aria-describedby="button-addon3">
+          <button onclick="creaDomanda()" class="btn btn-outline-primary" type="button" id="button-addon3"><span
+              class="material-symbols-outlined">
+              send
+            </span>
+          </button>
+        </div>
+      </div>
+
 
       <div id="ciao" style="display: none;" class="container">
         <button class="button" onclick="chiudo()">
@@ -459,34 +483,27 @@
           <div class="toast-body">
             <h5></h5>
             <p>Non ho capito il past simple, qualcuno me lo spiega?</p>
+            <button onclick="likes()" type="button" class="btn btn-outline-success"><span
+                class="material-symbols-outlined">
+                thumb_up
+              </span></button>
+            <span id="like"></span>
+            <button onclick="dislikes()" type="button" class="btn btn-outline-danger"><span
+                class="material-symbols-outlined">
+                thumb_down
+              </span></button>
+            <span id="dislike"></span>
           </div>
         </div>
         <div class="input-group mb-3" id="mess">
-          <input type="text" class="form-control" placeholder="Risposta" aria-label="Recipient's username"
+          <input id="txtRisp" type="text" class="form-control" placeholder="Risposta" aria-label="Recipient's username"
             aria-describedby="button-addon2">
-          <button class="btn btn-outline-primary" type="button" id="button-addon2"><span
+          <button onclick="risposta()" class="btn btn-outline-primary" type="button" id="button-addon2"><span
               class="material-symbols-outlined">
               send
-              <button onclick="likes()" type="button" class="btn btn-outline-success"><span
-                  class="material-symbols-outlined">
-                  thumb_up
-                </span></button>
-              <span id="like"></span>
-              <button onclick="dislikes()" type="button" class="btn btn-outline-danger"><span
-                  class="material-symbols-outlined">
-                  thumb_down
-                </span></button>
-              <span id="dislike"></span>
+            </span></button>
         </div>
-      </div>
-      <div class="input-group mb-3" id="mess">
-        <input id="txtRisp" type="text" class="form-control" placeholder="Risposta" aria-label="Recipient's username"
-          aria-describedby="button-addon2">
-        <button onclick="risposta()" class="btn btn-outline-primary" type="button" id="button-addon2"><span
-            class="material-symbols-outlined">
-            send
-          </span></button>
-      </div>
+
       </div>
 
 

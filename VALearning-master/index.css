@@ -45,7 +45,7 @@ main {
     background-color: var(--azzurro2);
     width: 20%;
     border-radius: 10px;
-    /*overflow-y: scroll;*/
+    overflow-y: scroll;
 }
 
 #sectB {
@@ -125,16 +125,6 @@ main {
 #mess {
     position: fixed;
     bottom: 7%;
-    width: 68%;
-}
-
-#ciao .toast {
-    width: 70%;
-}
-
-#mess {
-    position: fixed;
-    bottom: 7%;
     width: 65%;
 }
 
@@ -149,5 +139,28 @@ ul strong {
 li {
     font-size: large;
     color: white;
+}
 
+/*
+#divBtnAdd {
+    display: flex;
+    justify-content: flex-start;
+}*/
+
+#aggDomanda {
+    width: 70vw;
+    height: 80vh;
+    z-index: 7;
+    position: absolute;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 2%;
+}
+
+#scriviDom {
+    position: fixed;
+    width: 68%;
+    bottom: 7%;
 }
